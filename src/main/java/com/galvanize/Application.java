@@ -1,18 +1,16 @@
 package com.galvanize;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Application {
 
 
     public static void main(String[] args) {
 
-        Table roundTable = new Table();
-        roundTable.setShape("round");
-
-        Table squareTable = new Table();
-        squareTable.setShape("square");
-
-        System.out.println(roundTable);
-        System.out.println(squareTable);
+        Accumulator acc = new Accumulator();
+        List<String> input = Arrays.asList("Alice", "Bob");
+        System.out.println(acc.aliceAndBob(input));
     }
 
 }
